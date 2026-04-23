@@ -4,135 +4,297 @@
   <meta charset="UTF-8">
   <title>Contacto | CAEM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <!-- NAV -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-caem fixed-top shadow">
-  <div class="container-fluid px-3">
-    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
-      <img src="imagenes/CAEMLOGOsF.png" class="logo-nav">
+  <div class="container px-3">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="imagenes/CAEMLOGOsF.png" class="logo-nav" alt="CAEM">
       CAEM
     </a>
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-      <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-      <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
-      <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-    </ul>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
+
+<!-- HERO -->
+<header class="hero-interno">
+  <div class="container text-center">
+    <p class="text-uppercase fw-bold mb-2" style="color:var(--accent);letter-spacing:2px;font-size:.8rem;">Estamos para ayudarte</p>
+    <h1 class="fw-bold">Contáctanos</h1>
+    <p>Cuéntanos tu situación y te orientamos sin costo</p>
+  </div>
+</header>
 
 <!-- CONTENIDO -->
 <main>
   <section class="section-pad">
     <div class="container">
-      <h2 class="fw-bold mb-4">Contacto</h2>
+      <div class="row g-5 align-items-start">
 
-      <div class="row g-5">
         <!-- INFO -->
-        <div class="col-lg-5">
-          <h5 class="fw-bold">Centro de Asesorías Escolares del Sureste</h5>
+        <div class="col-lg-4">
+          <h2 class="section-title mb-4" style="font-size:1.8rem;">Información de contacto</h2>
 
-          <p><strong>Dirección:</strong><br>
-            211A Calle 25, Ticul, Yucatán, 97860
-          </p>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <h6>Dirección</h6>
+              <p>Calle 25 #211A, Ticul<br>Yucatán, C.P. 97860</p>
+            </div>
+          </div>
 
-          <p><strong>Teléfono:</strong><br>
-            997 106 0320
-          </p>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <h6>Teléfono</h6>
+              <p><a href="tel:9971060320" style="color:inherit;text-decoration:none;">997 106 0320</a></p>
+            </div>
+          </div>
 
-          <p><strong>Correo:</strong><br>
-            impulsoacademicomx@gmail.com
-          </p>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h6>Correo electrónico</h6>
+              <p><a href="mailto:impulsoacademicomx@gmail.com" style="color:inherit;text-decoration:none;font-size:.85rem;">impulsoacademicomx@gmail.com</a></p>
+            </div>
+          </div>
 
-          <h6 class="fw-bold mt-4">Horarios</h6>
-          <ul>
-            <li>Lunes a Viernes: 10:00–13:00 y 16:00–19:00</li>
-            <li>Sábado: 10:00–13:00</li>
-            <li>Domingo: Cerrado</li>
-          </ul>
+          <div class="info-item">
+            <div class="info-icon" style="background:linear-gradient(135deg,#25d366,#128c7e);">💬</div>
+            <div>
+              <h6>WhatsApp</h6>
+              <p><a href="https://wa.me/529971060320" target="_blank" style="color:var(--caem3);font-weight:600;text-decoration:none;">Escríbenos directo →</a></p>
+            </div>
+          </div>
+
+          <div class="schedule-box">
+            <h6>Horarios de atención</h6>
+            <div class="schedule-row">
+              <span>Lunes – Viernes</span>
+              <span>10:00–13:00 | 16:00–19:00</span>
+            </div>
+            <div class="schedule-row">
+              <span>Sábado</span>
+              <span>10:00–13:00</span>
+            </div>
+            <div class="schedule-row">
+              <span>Domingo</span>
+              <span style="color:#e74c3c;">Cerrado</span>
+            </div>
+          </div>
         </div>
 
         <!-- FORMULARIO -->
-        <div class="col-lg-7">
-          <form class="card shadow-sm p-4">
-            <h5 class="fw-bold mb-3">Solicita información</h5>
-
-            <div class="mb-3">
-              <label class="form-label">Nombre completo</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Tu nombre"
-                required
-              >
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Correo electrónico</label>
-              <input
-                type="email"
-                class="form-control"
-                placeholder="correo@email.com"
-                required
-              >
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Teléfono</label>
-              <input
-                type="tel"
-                class="form-control"
-                placeholder="997 000 0000"
-                required
-                pattern="[0-9 ]{10,}"
-              >
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Servicio de interés</label>
-              <select class="form-select" required>
-                <option value="">Selecciona una opción</option>
-                <option>Regularización</option>
-                <option>Preparación para exámenes</option>
-                <option>Apoyo en tareas</option>
-                <option>Clases individuales</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Mensaje</label>
-              <textarea
-                class="form-control"
-                rows="4"
-                placeholder="Cuéntanos en qué podemos ayudarte"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-caem w-100">
-              Enviar solicitud (estático)
-            </button>
-
-            <p class="small text-muted mt-2 mb-0">
-              *Formulario solo de muestra, sin envío real.
+        <div class="col-lg-8">
+          <div class="card contact-card p-4 p-md-5 border-0">
+            <h3 class="fw-bold mb-1" style="font-size:1.5rem;color:var(--caem);">Solicita información</h3>
+            <p style="color:var(--muted);font-size:.92rem;margin-bottom:28px;">
+              Completa el formulario y nos pondremos en contacto contigo a la brevedad.
             </p>
-          </form>
+
+            <form id="formContacto">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre completo"
+                    required
+                  >
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="correo" class="form-label">Correo electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@ejemplo.com"
+                    required
+                  >
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="telefono" class="form-label">Teléfono / WhatsApp</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="997 000 0000"
+                    required
+                  >
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="nivelEscolar" class="form-label">Nivel escolar del alumno</label>
+                  <select class="form-select" id="nivelEscolar" name="nivelEscolar">
+                    <option value="">Selecciona una opción</option>
+                    <option>Secundaria</option>
+                    <option>Preparatoria</option>
+                    <option>Universidad</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="servicio" class="form-label">Servicio de interés</label>
+                  <select
+                    class="form-select"
+                    id="servicio"
+                    name="servicio"
+                    required
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option>Regularización</option>
+                    <option>Preparación para exámenes de ingreso</option>
+                    <option>Apoyo en tareas</option>
+                    <option>Clases individuales</option>
+                    <option>Paquete Semanal</option>
+                    <option>Intensivo Universitario</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    placeholder="Cuéntanos en qué podemos ayudarte, qué materias necesita reforzar, cuándo quieres comenzar, etc."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <button
+                    type="submit"
+                    class="btn-primary-caem w-100 justify-content-center"
+                    style="display:flex;"
+                  >
+                    Enviar solicitud ✉️
+                  </button>
+                  <p class="small text-muted mt-3 mb-0 text-center">
+                    * Los datos se enviarán al backend local de CAEM.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 </main>
 
 <!-- FOOTER -->
-<footer class="text-center py-3">
-  © 2026 CAEM · Ticul, Yucatán
+<footer>
+  <div class="container">
+    <div class="row g-5 mb-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <img src="imagenes/CAEMLOGOsF.png" class="footer-logo" alt="CAEM">
+          CAEM
+        </div>
+        <p class="footer-tagline">Somos el inicio de tu éxito</p>
+        <p class="footer-text">Centro de Asesorías Escolares del Sureste, comprometido con el futuro académico de cada alumno en Ticul, Yucatán.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <p class="footer-heading">Navegación</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <p class="footer-heading">Servicios</p>
+        <ul class="footer-links">
+          <li><a href="servicios.html">Regularización</a></li>
+          <li><a href="servicios.html">Preparación para exámenes</a></li>
+          <li><a href="servicios.html">Apoyo en tareas</a></li>
+          <li><a href="servicios.html">Clases individuales</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <p class="footer-heading">Contacto</p>
+        <div class="footer-contact">
+          <p>📍 Calle 25 #211A<br>Ticul, Yucatán 97860</p>
+          <p>📞 997 106 0320</p>
+          <p>✉️ impulsoacademicomx@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">© 2026 CAEM · Centro de Asesorías Escolares del Sureste · Ticul, Yucatán</p>
+  </div>
 </footer>
+
+<a href="https://wa.me/529971060320" target="_blank" class="whatsapp-btn" title="Escríbenos por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const formContacto = document.getElementById("formContacto");
+
+  formContacto.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = {
+      nombre: document.getElementById("nombre").value.trim(),
+      correo: document.getElementById("correo").value.trim(),
+      telefono: document.getElementById("telefono").value.trim(),
+      servicio: document.getElementById("servicio").value,
+      mensaje: document.getElementById("mensaje").value.trim()
+    };
+
+    try {
+      const response = await fetch("https://caem-backend.onrender.com/api/contacto", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const resultado = await response.json();
+
+      if (!response.ok) {
+        throw new Error(resultado.error || "No se pudo enviar la solicitud");
+      }
+
+      alert("Datos enviados correctamente 🚀");
+      formContacto.reset();
+      console.log(resultado);
+    } catch (error) {
+      console.error(error);
+      alert("Error al enviar datos ❌");
+    }
+  });
+</script>
 
 </body>
 </html>
